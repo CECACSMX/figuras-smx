@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Figuras SMX · CECAC</title>
+<meta name="description" content="Figuras interactivas para Sistemas Microinformáticos y Redes (CECAC), de uso educativo.">
+<!-- © 2026 Angel Ortiz · CECAC · licencia MIT. Dibujado con el kit Anatomy, MIT © 2026 Ryan. Desarrollado con ayuda de IA (Claude). Uso educativo. -->
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1d2230;--muted:#5d6475;--line:#e2e0d8;--brand:#24375F;--accent:#24375F;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#121417;--card:#1b1e23;--ink:#e8eaee;--muted:#9aa1ad;--line:#2b2f36;--accent:#9fb4e6;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+.cecac{display:flex;align-items:center;gap:20px;background:var(--brand);color:#fff;padding:0 20px 0 0;min-height:64px;flex-wrap:wrap}
+.cecac img{height:64px;width:auto;display:block}
+.cecac b{font-weight:600;font-size:15px;display:block}.cecac span{font-size:12.5px;opacity:.85}
+main{max-width:1120px;margin:0 auto;padding:28px 16px 40px}
+.intro{max-width:70ch;color:var(--muted);margin:0 0 28px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:30px 0 14px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{display:block;aspect-ratio:4/3;background:#fbfaf7;overflow:hidden;border-bottom:1px solid var(--line)}
+.thumb img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .3s ease}
+.card:hover .thumb img{transform:scale(1.03)}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tag{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent)}
+h3{font-size:17px;margin:0;line-height:1.3}h3 a{color:inherit;text-decoration:none}h3 a:hover{text-decoration:underline}
+.body p{margin:0;color:var(--muted);font-size:14px;flex:1}
+.links{display:flex;gap:14px;margin-top:8px;font-size:13.5px}.links a{color:var(--accent);font-weight:600}
+.links a+a{font-weight:400;opacity:.8}
+footer{max-width:1120px;margin:0 auto;padding:0 16px 32px;color:var(--muted);font-size:12px}
+@media (prefers-reduced-motion:reduce){.thumb img{transition:none}}
+</style>
+</head>
+<body>
+<header class="cecac"><img src="cecac_logo.jpg" alt="CECAC"><div><b>Sistemas Microinformáticos y Redes</b><span>Figuras interactivas para clase</span></div></header>
+<main>
+  <h1>Figuras SMX</h1>
+  <p class="intro">Máquinas dibujadas pieza a pieza para ver por dentro lo que explicamos en clase. Se usan en el navegador: flechas para avanzar, espacio para verlo todo y el ratón para señalar cada pieza. Cada figura tiene tema claro y oscuro.</p>
+  <section><h2>MP01 · Montaje y mantenimiento de equipos</h2><div class="grid">
+      <article class="card">
+        <a class="thumb" href="figuras/despiece-semitorre/"><img src="miniaturas/despiece-semitorre.png" alt="Despiece de una semitorre ATX" loading="lazy"></a>
+        <div class="body">
+          <span class="tag">Montaje</span>
+          <h3><a href="figuras/despiece-semitorre/">Despiece de una semitorre ATX</a></h3>
+          <p>Los 13 componentes de un sobremesa y el orden en que se desmontan: cada pieza sale por su eje de montaje.</p>
+          <div class="links"><a href="figuras/despiece-semitorre/">Abrir</a><a href="figuras/despiece-semitorre/oscuro.html">Tema oscuro</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="figuras/despiece-minipc/"><img src="miniaturas/despiece-minipc.png" alt="Despiece de un mini PC" loading="lazy"></a>
+        <div class="body">
+          <span class="tag">Montaje</span>
+          <h3><a href="figuras/despiece-minipc/">Despiece de un mini PC</a></h3>
+          <p>Un ordenador completo en 115 × 102 × 42 mm, capa a capa: turbina, disipador, placa con CPU soldada, SO-DIMM, M.2 y disco de 2,5″.</p>
+          <div class="links"><a href="figuras/despiece-minipc/">Abrir</a><a href="figuras/despiece-minipc/oscuro.html">Tema oscuro</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="figuras/arquitectura/"><img src="miniaturas/arquitectura.png" alt="Arquitectura del ordenador" loading="lazy"></a>
+        <div class="body">
+          <span class="tag">Arquitectura</span>
+          <h3><a href="figuras/arquitectura/">Arquitectura del ordenador</a></h3>
+          <p>Von Neumann frente a Harvard: un solo bus para instrucciones y datos o dos buses separados.</p>
+          <div class="links"><a href="figuras/arquitectura/">Abrir</a><a href="figuras/arquitectura/oscuro.html">Tema oscuro</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="figuras/cuello-de-botella/"><img src="miniaturas/cuello-de-botella.png" alt="El cuello de botella del almacenamiento" loading="lazy"></a>
+        <div class="body">
+          <span class="tag">Almacenamiento</span>
+          <h3><a href="figuras/cuello-de-botella/">El cuello de botella del almacenamiento</a></h3>
+          <p>HDD, SSD SATA y NVMe copiando el mismo archivo de 4 GB: dónde se atasca el dato y por qué.</p>
+          <div class="links"><a href="figuras/cuello-de-botella/">Abrir</a><a href="figuras/cuello-de-botella/oscuro.html">Tema oscuro</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="figuras/tipos-de-discos/"><img src="miniaturas/tipos-de-discos.png" alt="Tipos de discos: interfaz y velocidad" loading="lazy"></a>
+        <div class="body">
+          <span class="tag">Almacenamiento</span>
+          <h3><a href="figuras/tipos-de-discos/">Tipos de discos: interfaz y velocidad</a></h3>
+          <p>Carrera de 8 unidades, de PATA a NVMe PCIe 5.0, copiando 4 GB a su velocidad real.</p>
+          <div class="links"><a href="figuras/tipos-de-discos/">Abrir</a><a href="figuras/tipos-de-discos/oscuro.html">Tema oscuro</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="figuras/memoria-ram/"><img src="miniaturas/memoria-ram.png" alt="Memoria RAM: celda 1T1C y generaciones" loading="lazy"></a>
+        <div class="body">
+          <span class="tag">Memoria</span>
+          <h3><a href="figuras/memoria-ram/">Memoria RAM: celda 1T1C y generaciones</a></h3>
+          <p>Cómo guarda un bit la DRAM, la prebúsqueda y el reloj DDR, y seis generaciones de módulo.</p>
+          <div class="links"><a href="figuras/memoria-ram/">Abrir</a><a href="figuras/memoria-ram/oscuro.html">Tema oscuro</a></div>
+        </div>
+      </article></div></section>
+</main>
+<footer>© 2026 Angel Ortiz · CECAC SMX · uso educativo · licencia MIT · desarrollado con ayuda de IA (Claude) · figuras dibujadas con el kit Anatomy (MIT, © 2026 Ryan) · el logo de CECAC es del centro y queda excluido de la licencia.</footer>
+</body>
+</html>
