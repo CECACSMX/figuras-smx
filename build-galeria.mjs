@@ -14,26 +14,26 @@ const DRIVE = "C:/Users/Ido/.claude/skills/anatomy/scripts/drive.mjs";
 
 // modulo · título · qué enseña · origen (carpeta, archivo claro, archivo oscuro) · cómo se fotografía la miniatura
 const FIGURAS = [
-  { slug: "despiece-semitorre", modulo: "MP01", tema: "Montaje", titulo: "Despiece de una semitorre ATX",
+  { slug: "despiece-semitorre", modulo: "MP0221", tema: "Montaje", titulo: "Despiece de una semitorre ATX",
     texto: "Los 13 componentes de un sobremesa y el orden en que se desmontan: cada pieza sale por su eje de montaje.",
     src: "D:/Anatomy-Despiece", claro: "despiece-light.html", oscuro: "despiece.html", foto: [["key", "End"], ["wait", 600]] },
-  { slug: "despiece-minipc", modulo: "MP01", tema: "Montaje", titulo: "Despiece de un mini PC",
+  { slug: "despiece-minipc", modulo: "MP0221", tema: "Montaje", titulo: "Despiece de un mini PC",
     texto: "Un ordenador completo en 115 × 102 × 42 mm, capa a capa: turbina, disipador, placa con CPU soldada, SO-DIMM, M.2 y disco de 2,5″.",
     src: "D:/Anatomy-MiniPC", claro: "minipc-light.html", oscuro: "minipc.html", foto: [["key", "End"], ["wait", 600]] },
-  { slug: "arquitectura", modulo: "MP01", tema: "Arquitectura", titulo: "Arquitectura del ordenador",
+  { slug: "arquitectura", modulo: "MP0221", tema: "Arquitectura", titulo: "Arquitectura del ordenador",
     texto: "Von Neumann frente a Harvard: un solo bus para instrucciones y datos o dos buses separados.",
     src: "D:/Anatomy-Arquitectura", claro: "arquitectura-light.html", oscuro: "arquitectura.html", foto: [["wait", 3000]] },
-  { slug: "cuello-de-botella", modulo: "MP01", tema: "Almacenamiento", titulo: "El cuello de botella del almacenamiento",
+  { slug: "cuello-de-botella", modulo: "MP0221", tema: "Almacenamiento", titulo: "El cuello de botella del almacenamiento",
     texto: "HDD, SSD SATA y NVMe copiando el mismo archivo de 4 GB: dónde se atasca el dato y por qué.",
     src: "D:/Anatomy-CuelloBotella", claro: "cuello-botella-light.html", oscuro: "cuello-botella.html", foto: [["wait", 3000]] },
-  { slug: "tipos-de-discos", modulo: "MP01", tema: "Almacenamiento", titulo: "Tipos de discos: interfaz y velocidad",
+  { slug: "tipos-de-discos", modulo: "MP0221", tema: "Almacenamiento", titulo: "Tipos de discos: interfaz y velocidad",
     texto: "Carrera de 8 unidades, de PATA a NVMe PCIe 5.0, copiando 4 GB a su velocidad real.",
     src: "D:/Anatomy-Discos", claro: "discos-light.html", oscuro: "discos.html", foto: [["wait", 3000]] },
-  { slug: "memoria-ram", modulo: "MP01", tema: "Memoria", titulo: "Memoria RAM: celda 1T1C y generaciones",
+  { slug: "memoria-ram", modulo: "MP0221", tema: "Memoria", titulo: "Memoria RAM: celda 1T1C y generaciones",
     texto: "Cómo guarda un bit la DRAM, la prebúsqueda y el reloj DDR, y seis generaciones de módulo.",
     src: "D:/Anatomy-RAM", claro: "memoria-ram-light.html", oscuro: "memoria-ram.html", foto: [["wait", 3000]] },
 ];
-const MODULOS = { MP01: "MP01 · Montaje y mantenimiento de equipos", MP04: "MP04", MP05: "MP05", MP07: "MP07" };
+const MODULOS = { MP0221: "MP0221 · Montaje y mantenimiento de equipos" };
 
 const CREDITO = `<!-- © 2026 Angel Ortiz · CECAC · licencia MIT. Dibujado con el kit Anatomy, MIT © 2026 Ryan. Desarrollado con ayuda de IA (Claude). Uso educativo. -->`;
 const PIE = `<p class="g-credit" style="max-width:1000px;margin:14px auto 24px;padding:0 16px;font:11px/1.4 ui-sans-serif,system-ui,'Segoe UI',sans-serif;opacity:.65">© 2026 Angel Ortiz · CECAC SMX · uso educativo · licencia MIT · desarrollado con ayuda de IA (Claude) · dibujado con el kit Anatomy (MIT, © 2026 Ryan) · logo de CECAC excluido de la licencia</p>`;
@@ -41,6 +41,7 @@ const VOLVER = (otro, etiqueta) => `<nav class="g-nav" style="max-width:1000px;m
 
 function copia(f, archivo, otro, etiqueta) {
   let html = readFileSync(join(f.src, archivo), "utf8");
+  html = html.replace(/MP01 Montaje y mantenimiento/g, "MP0221 Montaje y mantenimiento"); // código oficial del módulo
   html = html.replace(/<p class="dp-credit">[\s\S]*?<\/p>/, ""); // la galería pone su propio pie
   html = html.replace(/<body([^>]*)>/, (m) => `${m}${CREDITO}${VOLVER(otro, etiqueta)}`);
   html = html.replace(/<\/body>/, `${PIE}</body>`);

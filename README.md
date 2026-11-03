@@ -6,12 +6,12 @@ Portada: `index.html`. Cada figura está en `figuras/<nombre>/` (`index.html` te
 
 | Figura | Módulo | Tema |
 |---|---|---|
-| Despiece de una semitorre ATX | MP01 | Montaje |
-| Despiece de un mini PC | MP01 | Montaje |
-| Arquitectura del ordenador (Von Neumann y Harvard) | MP01 | Arquitectura |
-| El cuello de botella del almacenamiento | MP01 | Almacenamiento |
-| Tipos de discos: interfaz y velocidad | MP01 | Almacenamiento |
-| Memoria RAM: celda 1T1C y generaciones | MP01 | Memoria |
+| Despiece de una semitorre ATX | MP0221 | Montaje |
+| Despiece de un mini PC | MP0221 | Montaje |
+| Arquitectura del ordenador (Von Neumann y Harvard) | MP0221 | Arquitectura |
+| El cuello de botella del almacenamiento | MP0221 | Almacenamiento |
+| Tipos de discos: interfaz y velocidad | MP0221 | Almacenamiento |
+| Memoria RAM: celda 1T1C y generaciones | MP0221 | Memoria |
 
 ## Añadir o actualizar una figura
 
