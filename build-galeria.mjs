@@ -32,6 +32,10 @@ const FIGURAS = [
   { slug: "memoria-ram", modulo: "MP0221", tema: "Memoria", titulo: "Memoria RAM: celda 1T1C y generaciones",
     texto: "Cómo guarda un bit la DRAM, la prebúsqueda y el reloj DDR, y seis generaciones de módulo.",
     src: "D:/Anatomy-RAM", claro: "memoria-ram-light.html", oscuro: "memoria-ram.html", foto: [["wait", 3000]] },
+  { slug: "fuente-atx", modulo: "MP0221", tema: "Alimentación", titulo: "La fuente ATX por dentro",
+    texto: "Despiece de una fuente conmutada de 650 W y el ciclo de conversión en 6 fases, de 230 V de alterna a +12, +5 y +3,3 V, con osciloscopio y sonido.",
+    src: "D:/Anatomy-FuenteATX", claro: "fuente-light.html", oscuro: "fuente.html",
+    foto: [["wait", 1500], ["eval", "document.querySelector('[data-explode]').value=100;document.querySelector('[data-explode]').dispatchEvent(new Event('input'))"], ["wait", 1500]] },
 ];
 const MODULOS = { MP0221: "MP0221 · Montaje y mantenimiento de equipos" };
 
