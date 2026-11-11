@@ -42,6 +42,9 @@ const FIGURAS = [
   { slug: "medir-tension", modulo: "MP0221", tema: "Alimentación", titulo: "Dónde medir la tensión",
     texto: "16 puntos de medida con el multímetro de dos puntas: conectores de la fuente, placa y dispositivos, con lectura y veredicto en vivo y averías simuladas.",
     src: "D:/Anatomy-MedirTension", claro: "medir-light.html", oscuro: "medir.html", foto: [["wait", 3000]] },
+  { slug: "banco-electricidad", modulo: "MP0221", tema: "Electricidad", titulo: "Banco de electricidad",
+    texto: "Qué es la electricidad, corriente continua y alterna, magnetismo y ley de Ohm en un banco de pruebas: fuente 0–12 V, reóstato, voltímetro, amperímetro, brújula de Ørsted y electroimán, con osciloscopio y sonido.",
+    src: "D:/Anatomy-Electricidad", claro: "electricidad-light.html", oscuro: "electricidad.html", foto: [["wait", 3000]] },
 ];
 const MODULOS = { MP0221: "MP0221 · Montaje y mantenimiento de equipos" };
 
