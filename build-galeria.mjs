@@ -45,6 +45,9 @@ const FIGURAS = [
   { slug: "banco-electricidad", modulo: "MP0221", tema: "Electricidad", titulo: "Banco de electricidad",
     texto: "Qué es la electricidad, corriente continua y alterna, magnetismo y ley de Ohm en un banco de pruebas: fuente 0–12 V, reóstato, voltímetro, amperímetro, brújula de Ørsted y electroimán, con osciloscopio y sonido.",
     src: "D:/Anatomy-Electricidad", claro: "electricidad-light.html", oscuro: "electricidad.html", foto: [["wait", 3000]] },
+  { slug: "multimetro", modulo: "MP0221", tema: "Medida", titulo: "Cómo usar el multímetro",
+    texto: "El multímetro del taller con su selector de 32 posiciones y sus 4 bornas: tensión en una pila y un enchufe, resistencia, diodo, continuidad y corriente en serie, con errores simulados como el fusible que se funde.",
+    src: "D:/Anatomy-Multimetro", claro: "multimetro-light.html", oscuro: "multimetro.html", foto: [["wait", 3000]] },
 ];
 const MODULOS = { MP0221: "MP0221 · Montaje y mantenimiento de equipos" };
 
