@@ -36,6 +36,12 @@ const FIGURAS = [
     texto: "Despiece de una fuente conmutada de 650 W y el ciclo de conversión en 6 fases, de 230 V de alterna a +12, +5 y +3,3 V, con osciloscopio y sonido.",
     src: "D:/Anatomy-FuenteATX", claro: "fuente-light.html", oscuro: "fuente.html",
     foto: [["wait", 1500], ["eval", "document.querySelector('[data-explode]').value=100;document.querySelector('[data-explode]').dispatchEvent(new Event('input'))"], ["wait", 1500]] },
+  { slug: "tensiones-pc", modulo: "MP0221", tema: "Alimentación", titulo: "Tensiones en el PC",
+    texto: "Los raíles de la fuente ATX (+12, +5, +3,3 y +5 VSB) hasta cada componente, el VRM de la CPU y los estados S0, S3 y S5, con electrones en movimiento y sonido.",
+    src: "D:/Anatomy-TensionesPC", claro: "tensiones-light.html", oscuro: "tensiones.html", foto: [["wait", 3000]] },
+  { slug: "medir-tension", modulo: "MP0221", tema: "Alimentación", titulo: "Dónde medir la tensión",
+    texto: "16 puntos de medida con el multímetro de dos puntas: conectores de la fuente, placa y dispositivos, con lectura y veredicto en vivo y averías simuladas.",
+    src: "D:/Anatomy-MedirTension", claro: "medir-light.html", oscuro: "medir.html", foto: [["wait", 3000]] },
 ];
 const MODULOS = { MP0221: "MP0221 · Montaje y mantenimiento de equipos" };
 
